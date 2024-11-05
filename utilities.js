@@ -53,18 +53,17 @@ function randomNumber(min, max) {
     return number;
 }
 
-//FUNZIONE ISEVEN (se pari)
+//FUNZIONE ISEVENODD
 /**
  * @param {Number} number
- * @returns {boolean}
+ * @returns {string}
  * 
- * @abstract Ritorna true se il parametro number passato è pari, false se dispari
+ * @abstract Ritorna "pari" se il parametro number passato è "dispari", se il parametro number passato è dispari
  * 
  */
-function isEven(number) {
-    let isEven = false;
+function isEvenOdd(number) {
     if (number % 2 === 0) {
-        isEven = true;
+        return "pari";
     }
-    return isEven;
+    return "dispari";
 }
