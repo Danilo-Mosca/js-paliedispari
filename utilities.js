@@ -15,18 +15,18 @@ Creare una funzione per capire se la parola inserita è palindroma */
 
 function palidroma(word) {
     // Variabile stringa che conterrà la parola al contrario
-    let reversedParola = "";
+    let reversedWord = "";
     // Flag di controllo che restituirà true o false se la parola è palindroma o meno
     let flag = false;
 
     // Ciclo che inverte al contrario la parola (word) passata come parametro
-    for (let i = word.length - 1; i <= 0; i--) {
-        reversedParola += word[i];
-        // console.log(reversedParola, i);
+    for (let i = word.length - 1; i >= 0; i--) {
+        reversedWord += word[i];
+        // console.log(reversedWord);
     }
 
     // If che controlla se la parola al contrario è palindroma (per sicurezza prima trasformo tutti i caratteri delle parole in minuscolo)
-    if (word.toLowerCase === reversedParola.toLowerCase) {
+    if (word.toLowerCase() === reversedWord.toLowerCase()) {
         flag = true;
     }
     return flag;
