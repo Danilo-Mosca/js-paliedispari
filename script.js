@@ -50,4 +50,7 @@ while (!checkVariable) {
     }
 }
 
+// Creo la variabile che conterrà la somma dei numeri casuali dell'utente e del pc
+const sum = randomPCnumber + randomUserNumber;
+
 /* --------------- Fine esercizio Pari e Dispari --------------- */
