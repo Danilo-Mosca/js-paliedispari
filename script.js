@@ -1,6 +1,8 @@
 "use strict";
 console.clear();
 
+/* --------------- Esercizio Palidroma --------------- */
+
 // Chiedo all'utente di inserire una parola è la assegno alla costante word
 const word = prompt("Inserisci una parola");
 
@@ -16,3 +18,10 @@ if (wordPalindroma) {
 else {
     console.log("La parola che hai inserito non è palidroma!");
 }
+/* --------------- Fine esercizio Palidroma --------------- */
+
+
+
+/* --------------- Esercizio Pari e Dispari --------------- */
+
+/* --------------- Fine esercizio Pari e Dispari --------------- */

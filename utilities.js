@@ -1,6 +1,7 @@
 "use strict";
 //UTILITIES FUNCTION
 
+
 /* Palidroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma */
@@ -30,4 +31,22 @@ function palidroma(word) {
         flag = true;
     }
     return flag;
+}
+
+/* Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri
+Stabiliamo se la somma dei due num */
+
+/**
+ * @param {Number} min
+ * @param {Number} max
+ * @returns {Number}
+ * 
+ * @abstract Ritorna un numero casuale compreso tra min e max
+ */
+function randomNumber (min, max) {
+    const number = Math.floor(Math.random() * (max - min + 1)) + min;
+    return number;
 }
